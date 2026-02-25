@@ -8,6 +8,22 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {},
-  "order": []
+  "sections": {
+    "custom_liquid_hkBctk": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n/* Remove ALL spacing from this section */\n.shopify-section:has(.custom-video-hero) {\n  padding: 0 !important;\n  margin: 0 !important;\n}\n\n.custom-video-hero {\n  position: relative;\n  width: 100vw;\n  height: 100vh;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden;\n  left: 50%;\n  right: 50%;\n  margin-left: -50vw !important;\n  margin-right: -50vw !important;\n}\n\n.custom-video-hero video {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 100vw;\n  height: 100vh;\n  object-fit: cover;\n  transform: translate(-50%, -50%);\n}\n\n/* Desktop / Mobile switch */\n.video-desktop { display: block; }\n.video-mobile { display: none; }\n\n@media screen and (max-width: 749px) {\n  .video-desktop { display: none; }\n  .video-mobile { display: block; }\n}\n\n/* Force transparent header */\nheader,\n.header-wrapper,\n.shopify-section-header {\n  position: absolute !important;\n  width: 100%;\n  background: transparent !important;\n  z-index: 20;\n}\n</style>\n\n<div class=\"custom-video-hero\">\n  \n  <!-- Desktop -->\n  <video\n    class=\"video-desktop\"\n    autoplay\n    muted\n    loop\n    playsinline\n    preload=\"metadata\">\n    <source src=\"https://cdn.shopify.com/videos/c/o/v/d3d3f4a14a20488e99345c9af27ada5c.mp4\" type=\"video/mp4\">\n  </video>\n\n  <!-- Mobile -->\n  <video\n    class=\"video-mobile\"\n    autoplay\n    muted\n    loop\n    playsinline\n    preload=\"metadata\">\n    <source src=\"https://cdn.shopify.com/videos/c/o/v/786f8fbe715f45c2811065b8deb87e4e.mp4\" type=\"video/mp4\">\n  </video>\n\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_hkBctk"
+  ]
 }
